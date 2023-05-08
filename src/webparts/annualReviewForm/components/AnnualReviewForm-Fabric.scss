@@ -1,0 +1,59 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+/* This file is for handling the css objects which are not generated from the code */
+/* Modifying Microsoft generated classes */
+
+.ms-TextField-fieldGroup,
+.ms-BasePicker-text,
+.ms-Button,
+.ms-Dropdown-title {
+   border-radius: 10px;
+}
+
+.ms-Dropdown-item {
+   min-height: 25px;
+}
+
+.ControlZone {
+   margin-top: 5px !important;
+}
+
+#spLeftNav {
+   width: 165px;
+}
+
+.ms-Button--primary {
+   border: 1px solid rgb(0, 120, 212);
+   background-color: rgb(0, 120, 212);
+   color: rgb(255, 255, 255);
+}
+
+.ms-Button--primary:active {
+   background-color: rgb(0, 90, 158);
+   border: 1px solid rgb(0, 90, 158);
+   color: rgb(255, 255, 255);
+}
+
+.ms-Button--primary:hover {
+   background-color: rgb(16, 110, 190);
+   border: 1px solid rgb(16, 110, 190);
+   color: rgb(255, 255, 255);
+}
+
+.ms-Button--primary.is-disabled,
+.ms-Button--primary.is-disabled:active,
+.ms-Button--primary.is-disabled:hover {
+   border: 1px solid rgb(243, 242, 241);
+   background-color: rgb(243, 242, 241);
+   color: rgb(210, 208, 206);
+}
+
+@media print {
+   .ms-Button {
+      display: none;
+   }
+
+   .ms-TextField-fieldGroup textarea {
+      height: 290px;
+    }
+}

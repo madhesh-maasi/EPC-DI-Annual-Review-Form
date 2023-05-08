@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "annual-review-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/annualReviewForm/AnnualReviewFormWebPart.js",
+          "manifest": "./src/webparts/annualReviewForm/AnnualReviewFormWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AnnualReviewFormWebPartStrings": "lib/webparts/annualReviewForm/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
